@@ -1,0 +1,174 @@
+body {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1024px;
+    justify-content: center;
+}
+header h1 {
+    background-color: #89B2C0;
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+header h2 {
+    background-color: #89B2C0;
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+nav {
+    background-color: #ADD8E6;
+    margin-bottom: 2rem;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+nav li:hover {
+    background-color: #89B2C0;
+}
+nav a:hover {
+    color: #FFF;
+}
+nav li {
+    flex: 1 1 100%;
+    height: 100%;
+    width: 100%;
+}
+nav a {
+    display: block;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1rem;
+    padding: 1.5rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h2 {
+    font-size: 1rem;
+}
+main li {
+    margin: 1rem;
+    text-align: left;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #89B2C0;
+    text-align: center;
+    padding: 0;
+    padding: 1rem 1rem;
+    margin-top: 1.5rem;
+}
+
+.copyright, .name, .lastmodified {
+    margin: 0.25rem;
+}
+.separator {
+    display: none;
+}
+/* HOME MAIN */
+.logo-title {
+    margin-top: 1rem;
+    grid-column: 1;
+    grid-row: 1;
+}
+.logo {
+    grid-column: 1;
+    grid-row: 2;
+}
+.logo img {
+    margin-top: 1.5rem;
+    max-width: 70%;
+    max-height: 70%;
+}
+.purpose-title {
+    grid-column: 1;
+    grid-row: 3;
+}
+.purpose {
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 1rem;
+}
+.list-title {
+    text-decoration: underline;
+}
+
+/* TARGET AUDIENCE MAIN */
+.target-audience-title {
+    grid-column: 1;
+    grid-row: 1;
+}
+.target-audience {
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 1.5rem;
+}
+.scenarios-title {
+    grid-column: 1;
+    grid-row: 3;
+}
+.scenarios {
+    grid-column: 1;
+    grid-row: 4;
+}
+.personas-title {
+    grid-column: 1;
+    grid-row: 5;
+}
+.personas {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+/* DESIGN MAIN */
+.color-title {
+    grid-column: 1;
+    grid-row: 1;
+}
+.color {
+    grid-column: 1;
+    grid-row: 2;
+}
+.typography-title {
+    grid-column: 1;
+    grid-row: 3;
+}
+.typography {
+    grid-column: 1;
+    grid-row: 4;
+}
+#darkblue {
+    color: #89B2C0;
+    background-color: #000000;
+    padding: 0.2rem;
+}
+#lightblue {
+    color: #ADD8E6;
+    background-color: #000000;
+    padding: 0.2rem;
+}
+#white {
+    background-color: #000000;
+    color: #FFF;
+    padding: 0.2rem;
+}
+#font-signika {
+    font-family: 'Signika Negative', sans-serif;
+}

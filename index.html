@@ -4,77 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekpenyong Mfon - WDD230 - Web Frontend Development</title>
-    <meta name="description"
-        content="Assignment portal for Ekpenyong Mfon in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Austin Campbell - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Ekpenyong Mfon - Front end landing page for class">
     <meta name="author" content="Ekpenyong Mfon">
-    <meta property="OG:title" content="Ekpenyong Mfon - WDD 230 - Web Frontend Development">
+    <meta name="outline" content="course assignment portal">
 
-    <meta property="OG:title" content="Ekpenyong Mfon - WDD 230 - Web Frontend Development">
-    <meta property="OG:type" content="website">
-    <meta property="OG:image" content="https://visitglendale.com">
-    <meta property="OG:url" content="index.html">
-
+    <!-- Stylesheets and favicon -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="icon" href="favicon.ico">
-    <!--<link rel="stylesheet" href="styles/normalize.css">-->
-    <!-- <link rel="stylesheet" href="styles/larger.css"> -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- OG Meta -->
+    <meta property="og:title" content="Ekpenyong Mfon - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://visitglendale.com/wp-content/uploads/2019/06/thunderbird-conservation-park-renzodollarbill.jpg">
+    <meta property="og:url" content="https://austincbyui.github.io/wdd230/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
-
-    <title>WDD230: Assignment Portal</title>
-
 </head>
 
 <body>
-
+    <!-- Header -->
     <header>
-        <img src="images/mfon.jpg" alt="Myself">
+        <img src="images/mfon.jpg" alt="picture of me">
         <span>Ekpenyong Mfon</span>
     </header>
 
+    <!-- Navigation -->
     <nav>
-        <a href="">Home</a>
-        <a href="">Chamber</a>
-        <a href="lesson02/design-principles.html">Site Plan</a>
-        <a href="">BYU - Idaho</a>
-
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li class="current-menu-item"><a href="">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="lesson02/design-principles.html">Site Plan</a></li>
+            <li><a href="">BYU - Idaho</a></li>
+        </ul>
     </nav>
+
+    <!-- Main -->
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>Lesson01: <a href="">Layout</a> | <a href="">Media Query</a> | <a href="">JS Pen</a></li>
-                <li>Lesson02: <a href="lesson02/design-principles.html" target="_blank">Design Principle</a></li>
-                <li><a href="">lesson03</a></li>
-                <li><a href="">lesson04</a></li>
-                <li><a href="">lesson05</a></li>
-                <li><a href="">lesson06</a></li>
-                <li><a href="">lesson07</a></li>
-                <li><a href="">lesson08</a></li>
-                <li><a href="">lesson09</a></li>
-                <li><a href="">lesson10</a></li>
-                <li><a href="">lessson11</a></li>
-            </ul>
-        </section>
-        <section class="card">
-            <h3>Information</h3>
-            <p>Calabar, Nigeria: 32 <sup>o</sup>C </p>
-            <p>Number of Visits Page: </p>
-        </section>
+        <!-- Responsive Image -->
+        <div class="hero">
+            <picture>
+                <source srcset="images/Aba_Nigeria_Temple.jpg" media="(max-width: 500px)">
+                <source srcset="images/Aba_Nigeria_Temple.jpg" media="(max-width: 1000px)">
+                <img src="images/Aba_Nigeria_Temple.jpg" alt="Phoenix Temple" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <p>Aba Nigeria Temple</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1 class="notme">WDD 230: Web Frontend Development</h1>
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>Lesson01: <a href="">Layout</a> | <a href="">Media Query</a> | <a href="">JS Pen</a></li>
+                    <li>Lesson02: <a href="lesson02/design-principles.html" target="_blank">Design Principle</a></li>
+                    <li><a href="">lesson03</a></li>
+                    <li><a href="">lesson04</a></li>
+                    <li><a href="">lesson05</a></li>
+                    <li><a href="">lesson06</a></li>
+                    <li><a href="">lesson07</a></li>
+                    <li><a href="">lesson08</a></li>
+                    <li><a href="">lesson09</a></li>
+                    <li><a href="">lesson10</a></li>
+                    <li><a href="">lessson11</a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <p>Weather</p>
+                <p>Number of Visits to Page: <span id="visits">0</span></p>
+            </section>
+        </div>
     </main>
+
+    <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.725650429905!2d7.354082974038698!3d5.147794537621488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10429986acee733b%3A0xe939f64e8530fc7f!2sAba%20Nigeria%20Temple!5e0!3m2!1sen!2sng!4v1706183679486!5m2!1sen!2sng"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Footer -->
     <footer>
-        <p class="copyright">&copy; <span id="currentyear"></span> Ekpenyong Mfon Nigeria</p>
-        <p class="lastmodified">Last Modified:</p>
+        <p>&copy;<span id="year">h</span> Ekpenyong Mfon | Nigeria</p>
+        <p id="lastModified"></p>
+        <div id="mode">🕶️</div>
     </footer>
-
-    <script src="scripts/getdates.js"></script>
-
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/lightMode.js"></script>
+    <script src="scripts/numOfVisits.js"></script>
 </body>
 
 </html>
