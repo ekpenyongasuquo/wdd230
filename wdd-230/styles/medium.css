@@ -1,0 +1,24 @@
+@media only screen and (min-width: 32em) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    main {
+        font-size: 1.5rem;
+    }
+    header {
+        gap: 2rem;
+    }
+    .profile-pic {
+        width: 20%;
+        max-width: 25%;
+    }
+    .copyright {
+        font-size: 1.5rem;
+    }
+    .lastmodified {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Home Page of the website Funes Chamber of Commerce. Here you will find the hero and call to action, events, weather, news and release and spotlight.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Signika+Negative&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>[Home] Calabar Chamber of Commerce</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo"><a href="./"><img src="images/logo_calabar.jpeg"
+                    alt="Calabar Chamber of Commerce Logo"></a></div>
+        <h1 class="header-h1">Calabar Chamber of Commerce</h1>
+        <div class="header-social-media">
+            <a class="facebook-logo" href="https://www.facebook.com" target="_blank"><img
+                    src="images/facebook-logo.webp" alt="Facebook Logo"></a>
+            <a class="instagram-logo" href="https://www.instagram.com" target="_blank"><img
+                    src="images/instagram-logo.webp" alt="instagram Logo"></a>
+        </div>
+        <p id="todaysDate"></p>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="./">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="index-main">
+        <div id="home-meeting-banner">
+            <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</h2>
+        </div>
+        <div id="lastVisit">
+            <p></p>
+        </div>
+        <div class="home-hero">
+            <h2 class="home-hero-h2">Welcome to Cross River State</h2>
+            <picture>
+                <source media="(max-width: 559px)" srcset="images/funes_hero_small.webp">
+                <source media="(max-width: 1023px)" srcset="images/funes_hero_medium.webp">
+                <img src="images/calabar_image_large.png" alt="Team meeting banner">
+            </picture>
+            <a class="home-hero-join" href="join.html">Join the Chamber</a>
+        </div>
+        <div class="home-event">
+            <h2>Obudu Mountain Race</h2>
+            <div>
+                <p>Come join us in this awesome Mountain Race, Friday at 08:00 AM</p>
+                <a href="discover.html">more info...</a>
+            </div>
+
+        </div>
+        <div class="home-weather">
+            <h2 id="weather-title">Weather</h2>
+            <img id="weather-picture" alt="Weather image">
+            <div class="home-weather-section1">
+                <p><span id="temperature"></span>°C</p>
+                <p><span id="weather-description"></span></p>
+            </div>
+            <div class="home-weather-section2">
+                <p>Wind Speed:</p>
+                <p>Wind Chill:</p>
+            </div>
+            <div class="home-weather-section3">
+                <p><span id="windSpeed"></span> km/h</p>
+                <p><span id="windChill"></span></p>
+            </div>
+            <a href="https://openweathermap.org">openweathermap.org</a>
+        </div>
+        <div class="home-news-release">
+            <h2>News Release</h2>
+            <p>In a momentous achievement, Calabar Chamber of Commerce has been hailed as a national model of
+                excellence, setting new benchmarks for community-driven economic growth. This prestigious recognition
+                comes as a result of the chamber's unwavering commitment to fostering entrepreneurship, supporting local
+                businesses, and implementing innovative initiatives that have propelled the region's prosperity to new
+                heights.</p>
+        </div>
+        <div class="home-join hide-join">
+            <a class="join-link" href="join.html">Join Us!</a>
+            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+        </div>
+        <div class="home-spotlight">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section1">
+            <div class="home-footer-logo">
+                <img src="images/logo_calabar.jpeg" alt="Logo of Calabar Chamber of Commerce">
+            </div>
+            <section class="address-section">
+                <h3 class="footer-title">Calabar Chamber of Commerce</h3>
+                <p class="footer-address">State Housing Avenue, Calabar, Cross River State, Nigeria.</p>
+            </section>
+        </div>
+        <div class="footer-section2">
+            <p class="footer-email">calabarofcommerce@gmail.com</p>
+            <p class="footer-phone-number">+(234)8033334444</p>
+            <a class="footer-location"
+                href="https://www.google.com/maps/place/Calabar,+Cross+River/@5.000709,8.3479955,12z/data=!3m1!4b1!4m6!3m5!1s0x1067862eeaabcc29:0xa2b8722fb5b0b458!8m2!3d4.9757165!4d8.3417006!16zL20vMDUxeG4x?entry=ttu"
+                target="_blank">📍 Location Map</a>
+        </div>
+        <div class="footer-section3">
+            <p class="copyright">&copy; <span id="currentyear"></span> Calabar of Chamber Commmerce </p>
+            <p class="footer-name"><span class="footer-separator"> | </span> Ekpenyong Mfon <span
+                    class="footer-separator"> | </span></p>
+            <p class="footer-wdd230">WDD 230 Project <span class="footer-separator"> | </span></p>
+            <p class="lastmodified"></p>
+        </div>
+        <div class="footer-section4">
+            <p class="lastmodified2"></p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/directory.js"></script>
+    <script type="module" src="scripts/weather.js"></script>
+    <script type="module" src="scripts/windchill.js"></script>
+</body>
+
+</html>

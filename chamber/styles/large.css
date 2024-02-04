@@ -1,0 +1,198 @@
+@media screen and (min-width: 64rem) {
+    body {
+        font-size: 1.25rem;
+    }
+    .header-logo {
+        min-width: 50%;
+        width: 75%;
+    }
+    .header-logo img {
+        width: 100%;
+    }
+    .header-h1 {
+        font-size: 2.5rem;
+    }
+    #todaysDate {
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    /* GRID HOME MAIN */
+    .index-main {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    /* EVENT */
+    .home-event {
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* WEATHER */
+    .home-weather {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 1rem 1rem;
+    }
+
+    /* JOIN */
+    .home-join {
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .join-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .home-join p {
+        margin-top: 3rem;
+    }
+
+    /* HERO */
+    .home-hero {
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+    /* NEWS */
+    .home-news-release {
+        grid-column: 2/4;
+        grid-row: 3;
+    }
+    .home-hero-img-smallmedium {
+        display: none;
+    }
+    .home-hero-img-large {
+        display: block;
+    }
+
+    .home-hero-h2 {
+        font-size: 1.8rem;
+    }
+
+    /* SPOTLIGHT */
+    .home-spotlight {
+        grid-column: 4;
+        grid-row: 1/4;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .home-spotlight > section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #spotlight1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #spotlight2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #spotlight3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .home-spotlight-section2 {font-size: .75rem;}
+    .hide-join, .hide-spotlight {
+        display: block;
+    }
+
+    /* FOOTER */
+    .home-footer-logo {
+        justify-content: right;
+        width: 50%;
+    }
+    .home-footer-logo img {
+        width: 100%;
+    }
+    .footer-section1 {
+        font-size: 1rem;
+    }
+    .footer-section2 {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-section3 {
+        font-size: .9rem;
+    }
+    .footer-section4 {
+        font-size: .8rem;
+    }
+    .footer-section3 .lastmodified {
+        display: inline-block;
+    }
+    .lastmodified2 {display: none;}
+    .footer-wdd230 .footer-separator {display: contents;}
+
+    /* DISCOVER PAGE */
+    .discover-main {
+        grid-template-columns: 2fr 1fr;
+    }
+    #lastVisit {
+        grid-column: 1/3;
+        grid-row: -2;
+    }
+    .discover-funes {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    .discover-population {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .discover-geographic {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .discover-age {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .discover-economic {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .discover-education {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .discover-cultural {
+        grid-column: 1;
+        grid-row: 7;
+    }
+    .image-gallery {
+        grid-column: 2;
+        grid-row: 2/8;
+    }
+
+    /* JOIN PAGE */
+    .membership {
+        display: inline-block;
+    }
+    .membership-info {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 5.5rem;
+        padding-left: .1rem;
+        width: 47%;
+    }
+    .membership-info li {
+        padding: .1rem;
+        font-size: .9rem;
+    }
+
+    /* DIRECTORY PAGE */
+    .directory-main .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
