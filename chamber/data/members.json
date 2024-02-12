@@ -1,0 +1,94 @@
+{
+    "businesses": [
+        {
+            "name": "Wisement Capital",
+            "description": "Mortage Broker",
+            "address": "Blvd. Antonio L. Rodríguez 2100,Rincón De Santa María Monterrey, N.L.",
+            "phone": "(81) 29350408",
+            "url": "https://wisement.com.mx/",
+            "logo": "https://scontent.fntr6-1.fna.fbcdn.net/v/t39.30808-6/376262685_122102547302035757_757434767565230125_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHKJGT6CieXaNqWjqPKbImbmUQy0XAz9vSZRDLRcDP29Px2_0RnperVlnYs8GTWamE&_nc_ohc=ZUtuFTFCSPEAX-Za0j4&_nc_ht=scontent.fntr6-1.fna&oh=00_AfC2DJY4OwslqcBDsa4WAin56QRhrdfByaaZTR-RahnqfQ&oe=656C2C5F",
+            "membership": "Gold",
+            "since": "2023"
+        },
+        {
+            "name": "DARAP",
+            "description": "Architectural Project Design",
+            "address": "Pegaso 154, Col Contry Monterrey N.L.",
+            "phone": "(81) 12398734",
+            "url": "https://www.darap.mx",
+            "logo": "https://scontent.fntr6-1.fna.fbcdn.net/v/t39.30808-6/299993204_437780718372235_1656884144336319811_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeERwF1wOIKWW4thx1TEn_h3gavpo3f1vCuBq-mjd_W8KzwR2b5-QXRfSfDj4bbh4LY&_nc_ohc=es5Lj9Ec7d8AX9HHprN&_nc_ht=scontent.fntr6-1.fna&oh=00_AfDM1pchsw2VTH7NKbFfDjyXYFZ-596f_mx63ow_Vn7yKQ&oe=656837AB",
+            "membership": "Gold",
+            "since": "2015"
+        },
+        {
+            "name": "KADRI Professionals",
+            "description": "Construction Projects",
+            "address": "P Zihuatanejo 3519 Col La Primavera Monterrey N.L.",
+            "phone": "(81) 98123738",
+            "url": "www.kadri.com.mx",
+            "logo": "https://img.freepik.com/vector-gratis/logotipo-excavadora-construccion-edificios_23-2148657768.jpg?w=740&t=st=1700966920~exp=1700967520~hmac=08afc020ea442ef463a48ba6944126d3cce302a277c23bf752e00b57276fac04",
+            "membership": "Gold",
+            "since": "1990"
+        },
+        {
+            "name": "SIGMA",
+            "description": "Food company",
+            "address": "David Alfaro Siqueiros 101, Flor de Mayo, San Pedro Garza García, N.L",
+            "phone": "(81) 84737282",
+            "url": "https://sigma.com.mx/",
+            "logo": "https://getlogo.net/wp-content/uploads/2020/09/sigma-alimentos-logo-vector.png",
+            "membership": "Silver",
+            "since": "2022"
+        },
+        {
+            "name": "Luis Elizondo Nursing Home",
+            "description": "Nursing Home",
+            "address": "C. San Luis 302, La Pastora, 67140 Guadalupe, N.L.",
+            "phone": "(81) 1239847",
+            "url": "https://www.asiloluiselizondo.org/es/",
+            "logo": "https://scontent.fntr6-1.fna.fbcdn.net/v/t39.30808-6/326212337_2408842389270018_730115461905905969_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGfNtiZdmxn_rkgwQV59bRJsp-aB5QpdASyn5oHlCl0BDCqQXS1h36xlGQNTynU6YY&_nc_ohc=35wmZjKS0OMAX9k8pvb&_nc_ht=scontent.fntr6-1.fna&oh=00_AfCtcS7vKyG3NFpRgCkRU9KOcrL2TzmlcQMPs_vsX_XW9Q&oe=6567EC95",
+            "membership": "Non-Profit",
+            "since": "2010"
+        },
+        {
+            "name": "SEGEST",
+            "description": "Building structure consulting",
+            "address": "Garza Sada 2501 Sur, Col. Tecnológico Monterrey, N.L.",
+            "phone": "(81) 39472622",
+            "url": "https://www.segestpro.com/",
+            "logo": "https://static.wixstatic.com/media/be36d5_2892af56be41418180cd2535aeaea5ef~mv2.png",
+            "membership": "Gold",
+            "since": "2018"
+        },
+        {
+            "name": "FEMSA",
+            "description": "Retail Company",
+            "address": "Lucas Alamán 1229, Bella Vista, 64410 Monterrey, N.L.",
+            "phone": "(81) 99994442",
+            "url": "https://www.femsa.com/es/",
+            "logo": "https://www.eleconomista.com.mx/__export/1627487437586/sites/eleconomista/img/2021/05/03/1280px-femsa_logo_svg.png_962327660.png",
+            "membership": "Silver",
+            "since": "2021"
+        },
+        {
+            "name": "Topo Chico",
+            "description": "Beverages Company",
+            "address": "Salinas 225, Topo Chico, 64260 Monterrey, N.L.",
+            "phone": "(81) 84646223",
+            "url": "https://www.topochico.com/",
+            "logo": "https://brandemia.org/sites/default/files/sites/default/files/topo_chico-logo-principal_0.jpg",
+            "membership": "Bronze",
+            "since": "1970"
+        },
+        {
+            "name": "AHMSA",
+            "description": "steel Company",
+            "address": "Blvd Harold R Pape 123 Monclova Coah",
+            "phone": "(86) 61238392",
+            "url": "https://wwww.ahmsa.com",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Logo_de_AHMSA.svg/4358px-Logo_de_AHMSA.svg.png",
+            "membership": "Bronze",
+            "since": "2005"
+        }
+    ]
+}

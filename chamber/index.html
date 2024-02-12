@@ -1,135 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HPG39MEE5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7HPG39MEE5');
+    </script>
+    <meta property="og:title" content="Calabar Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://github.com/ekpenyongasuquo/wdd230/blob/70942a5a163c936b0c7b5acb3cefa987e855c5af/chamber2/images/og-mty.jpg">
+    <meta property="og:url" content="https://ekpenyongasuquo.github.io/wdd230/chamber/index.html">
+    <meta name="author" content="Ekpenyong Mfon">
     <meta name="description"
-        content="Home Page of the websit Calabar Chamber of Commerce. Here you will find the hero and call to action, events, weather, news and release and spotlight.">
+        content="Ekpenyong Mfon Chamber of Commerce | see our directory - get more visibility - improve your community - join us today - memberships available starting at $100 a month">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>⭐ Calabar Chamber of Commerce - Official Site ⭐</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normal.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Signika+Negative&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <title>[Home] Calabar Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
 </head>
+
 
 <body>
     <header>
-        <div class="header-logo"><a href="./"><img src="images/logo_calabar.jpeg"
-                    alt="Calabar Chamber of Commerce Logo"></a></div>
-        <h1 class="header-h1">Calabar Chamber of Commerce</h1>
-        <div class="header-social-media">
-            <a class="facebook-logo" href="https://www.facebook.com" target="_blank"><img
-                    src="images/facebook-logo.webp" alt="Facebook Logo"></a>
-            <a class="instagram-logo" href="https://www.instagram.com" target="_blank"><img
-                    src="images/instagram-logo.webp" alt="instagram Logo"></a>
+        <div id="logo">
+            <img id="img-header" src="images/logo_calabar.webp" alt="Calabar Logo">
         </div>
-        <p id="todaysDate"></p>
-        <nav>
-            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-            <ul id="primaryNav">
-                <li class="active"><a href="./">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <h4 id="currentDate">-</h4>
+        <div id="mode">
+            <em> Dark Mode</em>🌝
+        </div>
     </header>
-    <main class="index-main">
-        <div id="home-meeting-banner">
-            <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</h2>
-        </div>
-        <div id="lastVisit">
-            <p></p>
-        </div>
-        <div class="home-hero">
-            <h2 class="home-hero-h2">Welcome to Calabar</h2>
-            <picture>
-                <source media="(max-width: 559px)" srcset="images/funes_hero_small.webp">
-                <source media="(max-width: 1023px)" srcset="images/funes_hero_medium.webp">
-                <img src="images/calabar_image_large.png" alt="Team meeting banner">
-            </picture>
-            <a class="home-hero-join" href="join.html">Join the Chamber</a>
-        </div>
-        <div class="home-event">
-            <h2>Obudu Mountain Race</h2>
-            <div>
-                <p>Come join us in this awesome Mountain Race, Friday at 08:00 AM</p>
-                <a href="discover.html">more info...</a>
-            </div>
+    <nav id="nav-menu">
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" title="Home" class="active">Home</a></li>
+            <li><a href="discover.html" title="Discover">Discover</a></li>
+            <li><a href="directory.html" title="Directory">Directory</a></li>
+            <li><a href="join.html" title="Join">Join</a></li>
+        </ul>
+    </nav>
 
-        </div>
-        <div class="home-weather">
-            <h2 id="weather-title">Weather</h2>
-            <img id="weather-picture" alt="Weather image">
-            <div class="home-weather-section1">
-                <p><span id="temperature"></span>°C</p>
-                <p><span id="weather-description"></span></p>
+
+
+    <main id="main-index">
+        <div id="announcementBanner" class="announcement-banner">
+            <div>
+                <strong>Announcement:</strong> Join us today at 7pm for our weekly meeting at grand Trancorp
+                Hotel❗
             </div>
-            <div class="home-weather-section2">
-                <p>Wind Speed:</p>
-                <p>Wind Chill:</p>
+            <button class="close-button" onclick="closeBanner()">Close</button>
+        </div>
+        <div class="hero-container">
+            <picture>
+                <source media="(max-width: 37.5em)" srcset="images/hero-img-small1.webp">
+                <source media="(max-width: 60em)" srcset="images/hero-img-medium1.webp">
+                <img id="hero-image" src="images/calabar_image_large.png" alt="large calabar image" loading="lazy">
+            </picture>
+            <h1 class="hero-text">Welcome to the Calabar Chamber of Commerce</h1>
+            <div class="call-to-action">
+                <button onclick="redirect()" class="cta-button">Join Us Today</button>
             </div>
-            <div class="home-weather-section3">
-                <p><span id="windSpeed"></span> km/h</p>
-                <p><span id="windChill"></span></p>
+        </div>
+        <section id="current-events">
+            <img src="images/evento.webp" alt="event icon" id="event-icon">
+            <h2>Upcoming Event:</h2>
+            <h4><strong>Event Title: </strong>Business Networking Gala</h4>
+            <p><strong>Date and Time: </strong> February 15, 2024, 6:00 PM - 9:00 PM</p>
+            <p><strong>Location: </strong>Grand City Convention Center</p>
+            <p>Join us for an evening of networking and celebration at the Annual Business Networking Gala hosted by
+                the
+                Calabar
+                Chamber of Commerce.</p>
+        </section>
+
+        <section id="weather-card">
+            <h2> Weather Information</h2>
+            <h4>Calabar, Cross River State</h4>
+            <div class="weather">
+                <h4>Today</h4>
+                <h4><span id="current-temp"></span> </h4>
+                <figure>
+                    <img id="weather-icon" alt="Weather Icon">
+                    <figcaption id="fig1" class="weather-fig-captions"></figcaption>
+                </figure>
             </div>
-            <a href="https://openweathermap.org">openweathermap.org</a>
-        </div>
-        <div class="home-news-release">
-            <h2>News Release</h2>
-            <p>In a momentous achievement, Calabar Chamber of Commerce has been hailed as a national model of
-                excellence, setting new benchmarks for community-driven economic growth. This prestigious recognition
-                comes as a result of the chamber's unwavering commitment to fostering entrepreneurship, supporting local
-                businesses, and implementing innovative initiatives that have propelled the region's prosperity to new
-                heights.</p>
-        </div>
-        <div class="home-join hide-join">
-            <a class="join-link" href="join.html">Join Us!</a>
-            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-        </div>
-        <div class="home-spotlight">
-        </div>
+            <h4>Forecast 3 days</h4>
+            <section class="weather" id="weather-forecast">
+                <div>
+                    <h4><span id="forecast-day-1"></span> </h4>
+                    <h4><span id="forecast-temp-1"></span> </h4>
+                    <figure>
+                        <img id="weather-icon1" class="w-icon" alt="weather icon">
+                        <figcaption id="fig2" class="weather-fig-captions"></figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h4><span id="forecast-day-2"></span> </h4>
+                    <h4><span id="forecast-temp-2"></span> </h4>
+                    <figure>
+                        <img id="weather-icon2" class="w-icon" alt="Weather Icon">
+                        <figcaption id="fig3" class="weather-fig-captions"></figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h4><span id="forecast-day-3"></span> </h4>
+                    <h4><span id="forecast-temp-3"></span> </h4>
+                    <figure>
+                        <img id="weather-icon3" class="w-icon" alt="Weather Icon">
+                        <figcaption id="fig4" class="weather-fig-captions"></figcaption>
+                    </figure>
+                </div>
+            </section>
+        </section>
+        <section id="company-spotlight1" class="spotlight">
+            <img src="images/logo-darap.webp" loading="lazy" alt="DARAP Logo">
+            <h2>DARAP</h2>
+            <p>Architectural Project Design</p>
+            <p>Pegaso 154, Col Contry Monterrey N.L.</p>
+            <p>Member Since: 2015</p>
+            <h4>Gold Membership</h4>
+            <a href="https://ocalta.com/" target="_blank">https://www.darap.mx</a>
+        </section>
+        <section id="company-spotlight2" class="spotlight">
+            <img src="images/logo-wisement.webp" loading="lazy" alt="Wisement Logo">
+            <h2>Wisement Capital</h2>
+            <p>Mortage Broker</p>
+            <p>Blvd. Antonio L. Rodríguez 2100,Rincón De Santa María Monterrey, N.L.</p>
+            <p>Member Since: 2023</p>
+            <h4>Gold Membership</h4>
+            <a href="https://wisement.com.mx/" target="_blank">https://wisement.com.mx/</a>
+        </section>
+        <section id="company-spotlight3" class="spotlight">
+            <img src="images/logo-topo-chico.webp" loading="lazy" alt="Wisement Logo">
+            <h2>Topo Chico</h2>
+            <p>Beverages Company</p>
+            <p>Salinas 225, Topo Chico, 64260 Monterrey, N.L.</p>
+            <p>Member Since: 1970</p>
+            <h4>Bronze Membership</h4>
+            <a href="https://www.coca-cola.com/us/en/brands/topo-chico" target="_blank">https://www.topochico.com/</a>
+        </section>
     </main>
     <footer>
-        <div class="footer-section1">
-            <div class="home-footer-logo">
-                <img src="images/logo_calabar.jpeg" alt="Logo of Calabar Chamber of Commerce">
-            </div>
-            <section class="address-section">
-                <h3 class="footer-title">Calabar Chamber of Commerce</h3>
-                <p class="footer-address">State Housing Avenue, Calabar, Cross River State, Nigeria.</p>
-            </section>
+        <div id="contact-info">
+            <img id="footer-img" src="images/logo_calabar.webp" loading="lazy" alt="Calabar Logo">
+            <h2>Calabar Chamber of Commerce</h2>
+            <h4>First Avenue State Housing Estate</h4>
+            <h4>contact@calchamber.com</h4>
+            <h4>+(224)8033334545</h4>
+
         </div>
-        <div class="footer-section2">
-            <p class="footer-email">calabarofcommerce@gmail.com</p>
-            <p class="footer-phone-number">+(234)8033334444</p>
-            <a class="footer-location"
-                href="https://www.google.com/maps/place/Calabar,+Cross+River/@5.000709,8.3479955,12z/data=!3m1!4b1!4m6!3m5!1s0x1067862eeaabcc29:0xa2b8722fb5b0b458!8m2!3d4.9757165!4d8.3417006!16zL20vMDUxeG4x?entry=ttu"
-                target="_blank">📍 Location Map</a>
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127188.17750036519!2d8.265592281684167!3d5.00087487410925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067862eeaabcc29%3A0xa2b8722fb5b0b458!2sCalabar%2C%20Cross%20River!5e0!3m2!1sen!2sng!4v1707731098753!5m2!1sen!2sng"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="footer-section3">
-            <p class="copyright">&copy; <span id="currentyear"></span> Calabar of Chamber Commmerce </p>
-            <p class="footer-name"><span class="footer-separator"> | </span> Ekpenyong Mfon <span
-                    class="footer-separator"> | </span></p>
-            <p class="footer-wdd230">WDD 230 Project <span class="footer-separator"> | </span></p>
-            <p class="lastmodified"></p>
-        </div>
-        <div class="footer-section4">
-            <p class="lastmodified2"></p>
+        <div id="dev-info">
+            <hr>
+            <p>&copy; 2024 Calabar Chamber</p>
+            <p>Ekpenyong Mfon</p>
+            <p>WDD230 Project</p>
+            <div id="lastModified"></div>
         </div>
     </footer>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/directory.js"></script>
-    <script type="module" src="scripts/weather.js"></script>
-    <script type="module" src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/hamMenu.js"></script>
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/redirect.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/weather.js"></script>
+
 </body>
 
 </html>
