@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Calabar Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://github.com/ekpenyongasuquo/wdd230/blob/70942a5a163c936b0c7b5acb3cefa987e855c5af/chamber2/images/og-mty.jpg">
+    <meta property="og:url" content="https://lmhprap.github.io/wdd230/chamber/index.html">
+    <meta name="author" content="Ekpenyong Mfon">
+    <meta name="description" content="Calabar Chamber of Commerce, join us!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Calabar Chamber of Commerce Site</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normal.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img id="img-header" src="images/logo_calabar.webp" alt="Calabar Logo">
+        </div>
+        <h4 id="currentDate"></h4>
+        <div id="mode">
+            <em> Dark Mode</em>🌝
+        </div>
+    </header>
+    <nav id="nav-menu">
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="discover.html" title="Discover">Discover</a></li>
+            <li><a href="directory.html" title="Directory">Directory</a></li>
+            <li><a href="join.html" title="Join" class="active">Join</a></li>
+        </ul>
+    </nav>
+    <main id=thank-you>
+        <h1>Welcome!</h1>
+        <h4>We hope this is the begining of a lifelong prosper business relationship!</h4>
+        <h4>We'll be in contact to the phone and mail address provided</h4>
+
+    </main>
+    <footer>
+        <div id="contact-info">
+            <img id="footer-img" src="images/logo_calabar.webp" loading="lazy" alt="Calabar Logo">
+            <h2>Calabar Chamber of Commerce</h2>
+            <h4>First Avenue State Housing Estate</h4>
+            <h4>contact@calchamber.com</h4>
+            <h4>+(234)8033334545</h4>
+
+        </div>
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127188.17750036519!2d8.265592281684167!3d5.00087487410925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067862eeaabcc29%3A0xa2b8722fb5b0b458!2sCalabar%2C%20Cross%20River!5e0!3m2!1sen!2sng!4v1707731098753!5m2!1sen!2sng"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="dev-info">
+            <hr>
+            <p>&copy 2024 Calabar Chamber</p>
+            <p>Ekpenyong Mfon</p>
+            <p>WDD230 Project</p>
+            <div id="lastModified"></div>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/hamMenu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
+</body>
+
+</html>
