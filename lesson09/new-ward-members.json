@@ -1,0 +1,33 @@
+{
+    "familyName": "Asuquo Mfon",
+    "movedDate": 2023,
+    "familyMembers": 5,
+    "bishopricVisit": true,
+    "members": [
+        {
+            "name": "Ekpenyong",
+            "gender": "male",
+            "bithdate": "10/10/1975"
+        },
+        {
+            "name": "Blessing",
+            "gender": "female",
+            "birthdate": "05/03/1989"
+        },
+        {
+            "name": "Philip",
+            "gener": "male",
+            "birthdate": "20/06/2017"
+        },
+        {
+            "name": "Miracle",
+            "gender": "female",
+            "birthdate": "15/03/2021"
+        },
+        {
+            "name": "Kindra",
+            "gender": "female",
+            "birthdate": "20/06/2023"
+        }
+    ]
+}
