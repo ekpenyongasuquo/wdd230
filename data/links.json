@@ -1,0 +1,66 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "holygrail.html",
+                    "title": "Holy Grail"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber-Site"
+                },
+                {
+                    "url": "lesson03/design.html",
+                    "title": "Design"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Bom"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/form.html",
+                    "title": "Form"
+                },
+                {
+                    "url": "lesson08/record.html",
+                    "title": "Record"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        }
+    ]
+}
