@@ -13,7 +13,7 @@
         {
             "name": "University of Calabar",
             "description": "Education",
-            "address": "Eta Agbor, Calabar Cross River State, Nigeria",
+            "address": "Eta Agbor, Calabar, Nigeria",
             "phone": "+2348126305234",
             "url": "https://www.unical.edu.ng",
             "logo": "images/UNICAL_LOGO.webp",
@@ -21,7 +21,7 @@
             "since": "2019"
         },
         {
-            "name": "University Teaching Hospital",
+            "name": "University of Calabar Teaching Hospital",
             "description": "Hospital",
             "address": "Permanent Site, Calabar, Nigeria",
             "phone": "(81) 98123738",
@@ -33,7 +33,7 @@
         {
             "name": "Lafarge Cement",
             "description": "Cement Company",
-            "address": "Calabar, Cross River State, Nigeria",
+            "address": "Calabar, Nigeria",
             "phone": ". +2348126305234",
             "url": "https://www.lafarge.com.ng/",
             "logo": "images/LAFARGE_LOGO.webp",
@@ -43,7 +43,7 @@
         {
             "name": "University of Cross River State",
             "description": "Education",
-            "address": "Ekpo Abasi, Calabr",
+            "address": "Ekpo Abasi, Calabar, Nigeria",
             "phone": "+2348121246223",
             "url": "https://www.unicross.edu.ng/",
             "logo": "images/UNICROSS_LOGO.webp",
@@ -62,8 +62,8 @@
         },
         {
             "name": "Jumia",
-            "description": "Retail Company",
-            "address": "391 Old Ojo Road",
+            "description": "Online Shopping Company",
+            "address": "391 Old Ojo Road, Lagos, Nigeria",
             "phone": "+23401 888 1100",
             "url": "https://www.jumia.com.ng/",
             "logo": "images/JUMIA_LOGO.webp",
