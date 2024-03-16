@@ -8,7 +8,7 @@ if (today === 1 || today === 2) {
 
 // Script for closing the banner
 const closeBtn = document.querySelector('.bannerBtn');
-closeBtn.addEventListener('click', function() {
+closeBtn.addEventListener('click', function () {
     if (banner.style.display !== "none") {
         banner.style.display = "none";
     }

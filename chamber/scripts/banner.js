@@ -1,6 +1,6 @@
 function isBannerDay() {
   const today = new Date().getDay();
-  return [1, 2, 5].includes(today);
+  return [1, 2, 4].includes(today);
 }
 
 function closeBanner() {
