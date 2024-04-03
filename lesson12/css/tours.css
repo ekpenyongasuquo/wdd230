@@ -1,0 +1,45 @@
+:root   {
+    --primary-clr: #000000;
+    --secondary-clr: #f7f7f7;
+    --tertiary-clr: #bd0000;
+}
+
+h3  {
+    color: var(--tertiary-clr);
+    margin: .5rem 0;
+}
+
+.card   {
+    margin: 2rem;
+}
+
+@media  (min-width:32.5em)  {
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    p   {
+        font-size: .8rem;
+    }
+
+    h3  {
+        font-size: 1.5rem;
+    }
+
+    .card   {
+        padding: 1rem;
+    }
+
+    .card img   {
+        height: 180px;
+        width: 100%;
+    }
+}
+
+@media  (min-width:64em)    {
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

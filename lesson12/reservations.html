@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scooters for rent in cozumel at affordable prices.">
+    <title>Scoots off on the bikes</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat:wght@400&family=Philosopher&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="./css/reservations.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-accessories">
+            <picture class="logo-container">
+                <img src="./images/scooter-images-removebg.png" alt="logo">
+            </picture>
+            <h1>Scoots</h1>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li id="menu">
+                    <a onclick="showSideNav()" class="menu-button-a" href="#"></a>
+                </li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+                <li class="active"><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./tours.html">Tours</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <ul class="nav-two">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./rentals.html">Rentals</a></li>
+            <li class="active"><a href="./reservations.html">Reservations</a></li>
+            <li><a href="./tours.html">Tours</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li class="side-bar-contact">
+                <div class="social-icons-top">
+                    <picture class="facebook-top-container">
+                        <img src="./images/facebook.gif" alt="facebook-icon">
+                    </picture>
+                    <picture class="twitter-top-container">
+                        <img src="./images/twitter.gif" alt="twitter-icon">
+                    </picture>
+                    <picture class="instagram-top-container">
+                        <img src="./images/instagram.gif" alt="instagram-icon">
+                    </picture>
+                </div>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <div class="social-icons-top fixed-social">
+            <picture class="facebook-top-container">
+                <img src="./images/facebook.gif" alt="facebook-icon">
+            </picture>
+            <picture class="twitter-top-container">
+                <img src="./images/twitter.gif" alt="twitter-icon">
+            </picture>
+            <picture class="instagram-top-container">
+                <img src="./images/instagram.gif" alt="instagram-icon">
+            </picture>
+        </div>
+        <div id="hero">
+            <picture>
+                <source media="(min-width:32.5em)" srcset="./images/HONDA-reservation-jpg.jpg">
+                <img src="images/HONDA-reservation-jpg.jpg" alt="banner">
+            </picture>
+        </div>
+        <div class="all-rentals">
+            <br>
+            <h2>Request a Reservation</h2>
+
+            <div class="terms-cond">
+                <button class="accordion" onclick="showPanel()">Terms and Conditions <span class="click">(click to
+                        view)</span></button>
+                <div class="panel">
+                    <p>The company rents to the renter, who hires the vehicle subject to the terms and conditions as set
+                        out herein.
+                        The renter will be bound by these terms and conditions, whether he was driving or not.</p>
+                    <ol>
+                        <li>Delivery of the vehicle takes place at the time the renter and/or driver and/or his
+                            representative takes
+                            possession of the keys and/or vehicle at the renting location.</li>
+                        <li>The vehicle shall be deemed to have been delivered in good order and repair and without any
+                            damage to inter alia
+                            the paintwork, upholstery and accessories (unless such damage is recorded in writing and
+                            signed by both parties under vehicle condition in the rental agreement or the rental vehicle
+                            condition report). Any damage not so recorded will be for the account of the renter.</li>
+                        <li>The vehicle may only be utilised for the rental period or any extended period.</li>
+                        <li>The renter and/or driver agree that any extension so noted on the company’s records would
+                            correctly reflect such extended period.</li>
+                        <li>The vehicle may only be driven by the driver or the additional driver.</li>
+                        <li>The renter and /or driver will ensure that the keys of the vehicle are under the renter’s
+                            and /or driver’s control at all times.</li>
+                        <li>The company will at all times remain the owner of the vehicle.</li>
+                        <li>The vehicle shall be returned undamaged, in good order and in roadworthy condition, fair
+                            wear and tear excepted.</li>
+                        <li>Should the vehicle not be returned as indicated, the vehicle may be reported as stolen to
+                            the relevant authorities.</li>
+                        <li>The renter will not be allowed to set-off or withhold payment of any amounts due in terms of
+                            this agreement for any reason whatsoever.</li>
+                        <li>The renter remains liable for payment of all amounts due until the company is paid in full
+                            by the issuer of the card.</li>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at time of rental.</li>
+                        <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                        <li>Fuel charge not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is free of charge.</li>
+                        <li>Reservations rate requires 24 hour prior notification.</li>
+                        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                        <li>Rentals may be returned to either location.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <form method="get" action="reservation-confirmation.html">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top"><b>Full Name</b><span class="ast">*</span> <input type="text" name="name"
+                            placeholder="Full Name" pattern="[a-zA-Z\s]{5,}" required></label>
+                    <label class="top"><b>Email</b><span class="ast">*</span> <input type="email" name="email"
+                            placeholder="email@address.com" required></label>
+                    <label class="top"><b>Phone Number</b><span class="ast">*</span> <input type="tel" name="phone"
+                            placeholder="1234567801" required></label>
+                    <label class="top"><b>Country</b><input type="text" name="country"></label>
+                    <label class="top"><b>Cruise Line (If Applicable)</b><input id="cruiseLine" type="text"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Rental Details</b></legend>
+                    <label class="top"><b>Rental Date</b> <input type="date" name="date"></label>
+                    <label class="top"><b>Rental Type</b>
+                        <input list="vehicles" name="vehicletype" placeholder="Select Vehicle">
+                        <datalist id="vehicles">
+                            <option value="" selected disabled hidden>Select Vehicle</option>
+                            <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                            <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                            <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                            <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                            <option value="Jeep Wrangler - 4 door with A/C">Jeep Wrangler - 4 door with A/C</option>
+                            <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                        </datalist>
+                    </label>
+
+                    <label class="top"><b>Rental Period</b>
+                        <select class="period" name="period">
+                            <option value="" selected disabled hidden>Select Period</option>
+                            <option value="half day">Half Day</option>
+                            <option value="one day">One Day</option>
+                            <option value="two days">Two Days</option>
+                            <option value="three days">Three Days</option>
+                            <option value="four days">Four Days</option>
+                            <option value="five days">Five Days</option>
+                            <option value="two days">Six Days</option>
+                            <option value="three days">One Week</option>
+                        </select>
+                    </label>
+
+                    <div class="divlabel"><b>Contact Preference</b></div>
+                    <div class="sbs">
+                        <input id="phone" type="radio" name="in-danger" value="yes">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="sbs">
+                        <input id="email" type="radio" name="in-danger" value="maybe">
+                        <label for="email">Email</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Additional Information</b></legend>
+                    <label class="top"><b>Comments</b> <textarea name="comments"
+                            placeholder="Do you have any special requests?" rows="7"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Request Reservation" class="submitBtn">
+            </form>
+
+
+
+        </div>
+    </main>
+    <footer>
+        <div id="top-footer">
+            <section>
+                <h3>Contact Us</h3>
+                <h4 class="address">Address</h4>
+                <span><img src="./images/location.gif" alt="location">Playa del Carmen-Cozumel</span>
+                <span><img src="./images/location.gif" alt="location">Terminal Puerta Maya</span>
+                <h4 class="social-h4">Social Media</h4>
+                <div class="social-icons-top social-bottom">
+                    <a href="https://web.facebook.com/" target="_blank" class="facebook-top-container">
+                        <img src="./images/facebook.gif" alt="facebook-icon">
+                    </a>
+                    <a href="https://https://twitter.com/" target="_blank" class="twitter-top-container">
+                        <img src="./images/twitter.gif" alt="twitter-icon">
+                    </a>
+                    <a href="https://https://www.instagram.com/" target="_blank" class="instagram-top-container">
+                        <img src="./images/instagram.gif" alt="instagram-icon">
+                    </a>
+                </div>
+                <h4>E-mail</h4>
+                <span><img src="./images/gmail.png" alt="email">&nbsp;&nbsp;scootsmaya@rentals.com</span>
+                <h4>Phone</h4>
+                <span><img src="./images/missed-call.gif" alt="call">&nbsp;&nbsp;+23480333335555</span>
+
+            </section>
+            <section>
+                <h3>Quick Links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html">Rentals</a></li>
+                        <li><a href="./index.html">Reservations</a></li>
+                        <li><a href="./index.html">Tours</a></li>
+                        <li><a href="./index.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h3>Rentals</h3>
+                <ul>
+                    <li><a href="#">Honda Metropolitan (49cc)</a></li>
+                    <li><a href="#">Honda Dio (110cc)</a></li>
+                    <li><a href="#">Honda PCX150 (149cc)</a></li>
+                    <li><a href="#">Honda Pioneer 1000</a></li>
+                    <li><a href="#">4-door Jeep Wrangler</a></li>
+                    <li><a href="#">2-door Jeep Wrangler</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="bottom-footer">
+            <p class="copyright">Ⓒ2024 | Ekpenyong Mfon | <a href="#">Terms</a></p>
+            <p id="updated"></p>
+            <p class="credit">All weather data is sourced from <a href="https://openweathermap.org"
+                    target="_blank">OpenWeatherMap</a></p>
+        </div>
+    </footer>
+    <script src="./scripts/menu.js"></script>
+</body>
+
+</html>

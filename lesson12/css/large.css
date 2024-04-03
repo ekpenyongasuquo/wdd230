@@ -1,0 +1,121 @@
+@media (min-width:64em) {
+    :root  {
+        /***** FONT FAMILIES *****/
+        --h1-ff: 'Cinzel Decorative', 'The Nautigal', cursive;
+        --h2-ff: 'Philosopher', sans-serif;
+        --b-ff: 'Montserrat', sans-serif;
+    
+        /***** FONT SIZES *****/
+        --fs-h1: 3.1rem;
+        --fs-h2: 2.5rem;
+        --fs-h3: 2rem;
+        --fs-h4: 1.7rem;
+        --fs-p: 1.2rem;
+
+            
+        /****** COLORS *****/
+        --primary-clr: #000000;
+        --secondary-clr: #f7f7f7;
+        --tertiary-clr: #bd0000;
+    
+        /**** MARGINS *****/
+        --space-sm: 1rem;
+        --space-m: 1.7rem;
+        --space-lrg: 2.5rem; 
+    }
+
+    header  {
+        padding: 0 1rem;
+    }
+    .logo-container   {
+        width: 60px;
+    }
+
+    #menu   {
+        display: none;
+    }
+
+    .nav-two    {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        list-style: none;
+        flex: 1 1 auto;
+        background-color: var(--tertiary-clr);
+        color: var(--secondary-clr);
+        border-left: 1px solid var(--secondary-clr);
+        border-right: 1px solid var(--secondary-clr);
+        border-top: 7px solid var(--primary-clr);
+        border-bottom: 7px solid var(--primary-clr);
+        text-align: center;
+    }
+
+    .navigation li:hover:not(ul li.active)   {
+        background-color: var(--tertiary-clr);
+        border-top: 7px solid var(--tertiary-clr);
+        border-bottom: 7px solid var(--tertiary-clr);
+    }
+    
+    ul.navigation a   {
+        color: var(--secondary-clr);
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        padding: .5rem;
+        font-style: normal;
+        align-self: center;
+        margin: auto;
+    }
+
+    ul.navigation a:hover:not(ul li.active a)  {
+        color: var(--secondary-clr);
+    }
+
+    ul li.active a  {
+        color: var(--primary-clr);
+    }
+
+    ul li.active a:hover    {
+        color: var(--primary-clr);
+    }
+
+    .hero   {
+        min-height: 560px;
+    }
+
+    .motto h2, .motto h3 {
+        margin: 0 0 -30px 0;
+        font-size: 5.5rem;
+        z-index: 99;
+    }
+    
+    .motto h3 {
+        font-size: 2rem;
+    }
+
+    .action-call    {
+        align-self: center;
+        margin-top: -100px;
+    }
+
+    .all-rentals    {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    hr  {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    section.today   {
+        width: 250px;
+    }      
+
+}
