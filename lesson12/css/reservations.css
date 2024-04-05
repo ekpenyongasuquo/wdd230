@@ -1,4 +1,4 @@
-:root   {
+:root {
     --primary-clr: #000000;
     --secondary-clr: #f7f7f7;
     --tertiary-clr: #bd0000;
@@ -8,16 +8,16 @@
     display: none;
 }
 
-.click  {
+.click {
     font-style: italic;
 }
 
-form   {
+form {
     padding: 1rem;
-    color: var(--secondary-clr);  
+    color: var(--secondary-clr);
     font-weight: 200;
-    max-width: 360px;  
-    margin: 0 auto; 
+    max-width: 360px;
+    margin: 0 auto;
 }
 
 fieldset {
@@ -25,7 +25,7 @@ fieldset {
     margin-bottom: 1rem;
 }
 
-legend  {
+legend {
     padding: .3rem;
     font-size: 1rem;
 }
@@ -41,12 +41,15 @@ form .submitBtn {
     cursor: pointer;
 }
 
-.submitBtn:hover    {
+.submitBtn:hover {
     background-color: var(--secondary-clr);
     color: var(--tertiary-clr);
 }
 
-input, textarea, select, button  {
+input,
+textarea,
+select,
+button {
     display: block;
     margin-bottom: 1rem;
     padding: .4rem .5rem;
@@ -56,11 +59,11 @@ input, textarea, select, button  {
     box-sizing: border-box;
 }
 
-label   {
+label {
     font-size: .9rem;
 }
 
-textarea    {
+textarea {
     resize: none;
     max-height: 200px;
 
@@ -74,7 +77,7 @@ input[type="radio"] {
     margin: 0;
 }
 
-.sbs    {
+.sbs {
     display: flex;
     align-items: center;
     margin: 0;
@@ -83,7 +86,7 @@ input[type="radio"] {
     margin-top: .5rem;
 }
 
-.sbs label  {
+.sbs label {
     margin-left: .2rem;
 }
 
@@ -94,7 +97,7 @@ input[type="radio"] {
 
 }
 
-.accordion  {
+.accordion {
     width: 100%;
     padding: .4rem .6rem .4rem .6rem;
     border: none;
@@ -106,42 +109,42 @@ input[type="radio"] {
     color: var(--secondary-clr);
 }
 
-.accordion::after   {
+.accordion::after {
     content: "+";
     float: right;
     font-weight: 900;
 }
 
-.panel  {
+.panel {
     display: none;
     overflow: hidden;
     margin: 0;
 }
 
-.active-panel  {
-    padding:  0 1rem 1rem 2rem;
+.active-panel {
+    padding: 0 1rem 1rem 2rem;
     display: block;
     border: 1px dotted var(--tertiary-clr);
     overflow: hidden;
     margin: 0;
-    
+
 }
 
-.active-accordion   {
+.active-accordion {
     background-color: var(--tertiary-clr);
     color: var(--secondary-clr);
 }
 
-.active-accordion::after    {
+.active-accordion::after {
     content: "-";
     color: var(--secondary-clr);
 }
 
-.panel li   {
+.panel li {
     list-style: square;
 }
 
-h2.confirmation-h2    {
+h2.confirmation-h2 {
     color: var(--tertiary-clr);
     margin: 2rem 0;
     text-align: center;
@@ -150,52 +153,55 @@ h2.confirmation-h2    {
 
 
 
-@media (min-width:32.5em)   {
-   div#hero img {
-    width: 100vw;
-   }
+@media (min-width:32.5em) {
+    div#hero img {
+        width: 100vw;
+    }
 
-   h2   {
-    margin-top: -2rem;
-   }
+    h2 {
+        margin-top: -2rem;
+    }
 
-   .all-rentals {
+    .all-rentals {
         max-width: 800px;
         margin: 0 auto 4rem;
-   }
+    }
 
-   .terms-cond  {
+    .terms-cond {
         margin-left: 1rem;
         margin-right: 1rem;
         width: 95%;
-   }
+    }
 
-   .terms-cond p    {
+    .terms-cond p {
         font-size: .8rem;
         padding-top: 1rem;
         font-style: italic;
         font-weight: 600;
-   }
+    }
 
-   .accordion   {
-    box-shadow: 0 0 3px 1px var(--secondary-clr);
-   }
+    .accordion {
+        box-shadow: 0 0 3px 1px var(--secondary-clr);
+    }
 
-   .panel   {
-    font-size: .8rem;
-    line-height: 1.8;
-    z-index: 9;
-    background-color: var(--secondary-clr);
-   }
+    .panel {
+        font-size: .8rem;
+        line-height: 1.8;
+        z-index: 9;
+        background-color: var(--secondary-clr);
+    }
 
-   form {
-    max-width: 800px;
-    margin: auto;
-   }
+    form {
+        max-width: 800px;
+        margin: auto;
+    }
 
-   input, textarea, select, button  {
+    input,
+    textarea,
+    select,
+    button {
         width: 400px;
-   }
+    }
 }
 
 @media (min-width:64em) {
@@ -203,5 +209,4 @@ h2.confirmation-h2    {
         margin-top: .2rem;
         margin-left: .4rem;
     }
-}   
-
+}
